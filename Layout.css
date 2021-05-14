@@ -18,6 +18,7 @@ background-image: linear-gradient(315deg, #0093E9 0%, #80D0C7 50%, #ffffff 100%)
 a
 {
   color: rgb(0, 0, 0);
+  
 }
 a.hover
 {
@@ -102,19 +103,48 @@ p
 .banner
 {
   line-height: normal;
-  background-color: #eec4b4;
+  /*background-color: #E6E6E6;*/
+  background-color: #DAA49A;
+  /*background-color: #CFB1B7;*/
   border-radius: 25px;
   font-weight:600;
   text-align: justify;
   padding-left: 20px;
   padding-right: 20px;
+  width: 80%;
+  float:none;
+  margin-left: 8%;
 }
-.float-child.name
+.links 
 {
-  width: 33.3%;
+  width: 100%;
   float: left;
-  text-align: justify;
-  border-color: #eec4b4;
-  border-width: 2px;
-  border-radius: 5px;
+  text-align: left;
+  border-color: #FF8552;
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+.links a
+{
+  float: center;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 25px;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: #52b788;
+  border-width: 10px;
+  border-radius: 10px;
+  height: 50px;
+  
+}
+.links a:hover
+{
+  background-color: #74c69d;
+  color: black;
 }
