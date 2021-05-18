@@ -1,68 +1,100 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link rel='stylesheet' type='text/css'  href='Layout.css'>
         <title>Covid Form</title>
     </head>
     <body>
       <script src="validation.js">
         </script>
+        <header>
+          <nav id = "header-nav" >
+          <div class = "float-container"> 
+            <div id="logo-img" class="float-child logo" > 
+              <img src="logo.png" alt="Logo image">
+            </div>
+            <div class="float-child name">
+              <br>
+              <h1 > Covi-Care India </h1 >
+            </div>
+            
+          </div>
+        </header>
+          
+        <div class="navbar" >
+          <p> <a href="Home.html" class = "active" target = "_blank"> HOME</a> &emsp; 
+            <a href="AboutUs.html" target = "_blank">ABOUT US</a> &emsp; 
+            <a href="Form.html" target = "_blank">SELF ASSESSMENT TEST</a> &emsp; 
+            <a href="Resources.html" target = "_blank">RESOURCES</a>  &emsp;
+            <a href="Precaution.html" target = "_blank"> PRECAUTIONS </a>
+          </p> 
+          </div>
+          <br><br>
+          <div class="banner" id="test-info">
+            <br>
+            <h2>Self Assessment Covid Test</h2>
+            <p>The purpose of this test is to indicate your risk of having Covid-19. This test does not replace the judgement of healthcare professionals or the performance of any clinical assessment. Hence, if you get likely-to-be-postive as the result of this test, we recommend you get a Covid Test done immediately. </p>
+          <br>
+        </div>
+        <div>
         <form name="form1" method="post">
-          <p>1. Enter your full name-<br>
-            <input type="textarea" name="fullname" id="n1">
+          <p>1. What is your name?<br>
+            &emsp;<input type="text" name="fullname" id="n1">
         </p>
-          <p>2. Enter your age-<br>
-            <input type="textarea" name="age" id="a1">
+          <p>2. How old are you?<br>
+            &emsp;<input type="text" name="age" id="a1">
         </p>
-          <p>3. Enter your Gender-<br>
-            <input type="radio" name="gender" id="g1" value="male">Male
-            <input type="radio" name="gender" id="g2" value="female">Female 
-            <input type="radio" name="gender" id="g3" value="nottosay">Prefer not to say
+          <p>3. What is your gender?<br>
+            &emsp;<input type="radio" name="gender" id="g1" value="male">Male<br>
+            &emsp;<input type="radio" name="gender" id="g2" value="female">Female <br>
+            &emsp;<input type="radio" name="gender" id="g3" value="nottosay">Prefer not to say
         </p>
           <p>4. What is your current body temperature?<br><br>
-            <input type="radio" name="fever" id="f1" value="normal">Normal (96 Degree to 98.6 Degree)<br> 
-            <input type="radio" name="fever" id="f2" value="moderate">Fever (98.7 Degree to 102 Degree)<br>
-            <input type="radio" name="fever" id="f3" value="high">High Fever (Above 102 Degree)
+            &emsp;<input type="radio" name="fever" id="f1" value="normal">Normal (96 Degree to 98.6 Degree)<br> 
+            &emsp;<input type="radio" name="fever" id="f2" value="moderate">Fever (98.7 Degree to 102 Degree)<br>
+            &emsp;<input type="radio" name="fever" id="f3" value="high">High Fever (Above 102 Degree)
         </p>
           <p>5. Do you have persistent dry cough?<br>
-            <input type="radio" name="cough" id="c1" value="yes">Yes
-            <input type="radio" name="cough" id="c2" value="no">No 
+            &emsp;<input type="radio" name="cough" id="c1" value="yes">Yes<br>
+            &emsp;<input type="radio" name="cough" id="c2" value="no">No 
         </p>
           <p>6. Do you get loose motions?<br>
-            <input type="radio" name="lmotion" id="l1" value="yes">Yes
-            <input type="radio" name="lmotion" id="l2" value="no">No 
+            &emsp;<input type="radio" name="lmotion" id="l1" value="yes">Yes<br>
+            &emsp;<input type="radio" name="lmotion" id="l2" value="no">No 
         </p>
           <p>7. Do you have sore throat?<br>
-            <input type="radio" name="sore" id="s1"value="yes">Yes
-            <input type="radio" name="sore" id="s2" value="no">No 
+            &emsp;<input type="radio" name="sore" id="s1"value="yes">Yes<br>
+            &emsp;<input type="radio" name="sore" id="s2" value="no">No 
         </p>
 
         <p>8. Do you have difficulty in breathing?<br>
-          <input type="radio" name="breath" id="b1"value="yes">Yes
-          <input type="radio" name="breath" id="b2" value="no">No 
+          &emsp;<input type="radio" name="breath" id="b1"value="yes">Yes<br>
+          &emsp;<input type="radio" name="breath" id="b2" value="no">No 
       </p>
           <p>9. Have you been travelling lately?<br>
-        <input type="radio" name="travel" id="t1" value="yes">Yes
-        <input type="radio" name="travel" id="t2" value="no">No
+            &emsp;<input type="radio" name="travel" id="t1" value="yes">Yes<br>
+            &emsp;<input type="radio" name="travel" id="t2" value="no">No
         </p>
         
           <p>10. Have you come in contact with a confirmed case?<br>
-            <input type="radio" name="contact" id="cc1" value="yes">Yes
-            <input type="radio" name="contact" id="cc2" value="no">No 
-            <input type="radio" name="contact" id="cc3" value="dontknow">Don't know
+            &emsp;<input type="radio" name="contact" id="cc1" value="yes">Yes<br>
+            &emsp;<input type="radio" name="contact" id="cc2" value="no">No <br>
+            &emsp;<input type="radio" name="contact" id="cc3" value="dontknow">Don't know
         </p>
           <p>11. Have you come in contact with a suspected case?<br>
-            <input type="radio" name="contact2" id="sc1" value="yes">Yes
-            <input type="radio" name="contact2" id="sc2" value="no">No 
-            <input type="radio" name="contact2" id="sc3" value="dontknow">Don't know
+            &emsp;<input type="radio" name="contact2" id="sc1" value="yes">Yes<br>
+            &emsp;<input type="radio" name="contact2" id="sc2" value="no">No <br>
+            &emsp;<input type="radio" name="contact2" id="sc3" value="dontknow">Don't know
           </p>
-          <p>12. Do you have a history of any of the diseases below-<br><br>
-            <input type="checkbox" name="diseases" id="d1" value="normal">BP<br>
-            <input type="checkbox" name="diseases" id="d2" value="mild">Diabetes<br>
-            <input type="checkbox" name="diseases" id="d3" value="moderate">Obesity<br>
-            <input type="checkbox" name="diseases" id="d4" value="high">Heart Disease<br> 
-            <input type="checkbox" name="diseases" id="d5" value="high">None<br>
+          <p>12. Do you have a history of any of the diseases below? Select all those applicable.<br><br>
+            &emsp;<input type="checkbox" name="diseases" id="d1" value="normal">BP<br>
+            &emsp;<input type="checkbox" name="diseases" id="d2" value="mild">Diabetes<br>
+            &emsp;<input type="checkbox" name="diseases" id="d3" value="moderate">Obesity<br>
+            &emsp;<input type="checkbox" name="diseases" id="d4" value="high">Heart Disease<br> 
+            &emsp;<input type="checkbox" name="diseases" id="d5" value="high">None<br>
           </p>
     </form>
+    </div>
     <p>
       <button type="button" onclick="checkButton()">Submit</button>
     </p>
