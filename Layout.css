@@ -148,3 +148,53 @@ p
   background-color: #74c69d;
   color: black;
 }
+
+input[type=text]{
+    padding: 10px 40px;
+    margin: 10px 0 ;
+    border: 2px solid rgb(75, 73, 73);
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius:10px;
+}
+
+input[type=radio] {
+    opacity: 3;
+    width:19px; 
+    height:19px;
+    margin: 10px 5px ;
+  }
+
+  input[type=checkbox] {
+    opacity: 3;
+    width:19px; 
+    height:19px;
+    margin: 10px 5px ;
+  }
+
+  button{
+    padding: 20px;
+    border:none;
+    background-color:#3F51B5;
+    color:#fff;
+    font-weight:600;
+    border-radius:5px;
+    width: 100% ;
+    font-size:medium;
+  }
+
+  button:hover{
+      background-color: gray;
+  }
+
+  *:focus{
+      outline: none ;
+  }
+
+  input[type=text]:focus {
+    background-color:lightblue;
+    border-color: #000;
+  }
+
+  #test-info h2{
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
