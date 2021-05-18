@@ -15,78 +15,82 @@
             </div>
             <div class="float-child name">
               <br>
-              <h1 > Covi-Care India </h1 >
+              <h1 > Covid-19 Self Assessment Test </h1 >
             </div>
             
           </div>
         </header>
           
         <div class="navbar" >
-          <p> <a href="Home.html" class = "active" target = "_blank"> HOME</a> &emsp; 
-            <a href="AboutUs.html" target = "_blank">ABOUT US</a> &emsp; 
-            <a href="Form.html" target = "_blank">SELF ASSESSMENT TEST</a> &emsp; 
-            <a href="Resources.html" target = "_blank">RESOURCES</a>  &emsp;
-            <a href="Precaution.html" target = "_blank"> PRECAUTIONS </a>
+          <p> 
+            <a href="HomePage.html" > HOME</a> &emsp; 
+            <a href="Form.html" >SELF ASSESSMENT TEST</a> &emsp; 
+            <a href="Resources.html" >RESOURCES</a>  &emsp;
+            <a href="Precaution.html" > PRECAUTIONS </a> &emsp;
+            <a href="AboutUs.html" class="active" >ABOUT US</a>
           </p> 
           </div>
           <br><br>
           <div class="banner" id="test-info">
             <br>
-            <h2>Self Assessment Covid Test</h2>
-            <p>The purpose of this test is to indicate your risk of having Covid-19. This test does not replace the judgement of healthcare professionals or the performance of any clinical assessment. Hence, if you get likely-to-be-postive as the result of this test, we recommend you get a Covid Test done immediately. </p>
+            <p>The purpose of this test is to indicate your risk of having Covid-19. 
+            This test does not replace the judgement of healthcare professionals or 
+            the performance of any clinical assessment. Hence, if you get 
+            "likely-to-be-postive" as the result of this test, we recommend you get a 
+            Covid Test done immediately. </p>
           <br>
         </div>
-        <div>
+        <div class="form">
         <form name="form1" method="post">
-          <p>1. What is your name?<br>
+          <p> <b>1.What is your name?</b> <br>
             &emsp;<input type="text" name="fullname" id="n1">
         </p>
-          <p>2. How old are you?<br>
+          <p><b>2. How old are you?</b><br>
             &emsp;<input type="text" name="age" id="a1">
         </p>
-          <p>3. What is your gender?<br>
+          <p><b>3.What is your gender?</b> <br>
             &emsp;<input type="radio" name="gender" id="g1" value="male">Male<br>
             &emsp;<input type="radio" name="gender" id="g2" value="female">Female <br>
             &emsp;<input type="radio" name="gender" id="g3" value="nottosay">Prefer not to say
         </p>
-          <p>4. What is your current body temperature?<br><br>
+          <p><b> 4.What is your current body temperature?</b><br><br>
             &emsp;<input type="radio" name="fever" id="f1" value="normal">Normal (96 Degree to 98.6 Degree)<br> 
             &emsp;<input type="radio" name="fever" id="f2" value="moderate">Fever (98.7 Degree to 102 Degree)<br>
             &emsp;<input type="radio" name="fever" id="f3" value="high">High Fever (Above 102 Degree)
         </p>
-          <p>5. Do you have persistent dry cough?<br>
+          <p><b>5. Do you have persistent dry cough?</b><br>
             &emsp;<input type="radio" name="cough" id="c1" value="yes">Yes<br>
             &emsp;<input type="radio" name="cough" id="c2" value="no">No 
         </p>
-          <p>6. Do you get loose motions?<br>
+          <p><b>6.Do you get loose motions?</b> <br>
             &emsp;<input type="radio" name="lmotion" id="l1" value="yes">Yes<br>
             &emsp;<input type="radio" name="lmotion" id="l2" value="no">No 
         </p>
-          <p>7. Do you have sore throat?<br>
+          <p><b>7. Do you have sore throat?</b><br>
             &emsp;<input type="radio" name="sore" id="s1"value="yes">Yes<br>
             &emsp;<input type="radio" name="sore" id="s2" value="no">No 
         </p>
 
-        <p>8. Do you have difficulty in breathing?<br>
+        <p><b>8. Do you have difficulty in breathing?</b><br>
           &emsp;<input type="radio" name="breath" id="b1"value="yes">Yes<br>
           &emsp;<input type="radio" name="breath" id="b2" value="no">No 
       </p>
-          <p>9. Have you been travelling lately?<br>
+          <p><b>9. Have you been travelling lately?</b><br>
             &emsp;<input type="radio" name="travel" id="t1" value="yes">Yes<br>
             &emsp;<input type="radio" name="travel" id="t2" value="no">No
         </p>
         
-          <p>10. Have you come in contact with a confirmed case?<br>
+          <p><b>10. Have you come in contact with a confirmed case?</b><br>
             &emsp;<input type="radio" name="contact" id="cc1" value="yes">Yes<br>
             &emsp;<input type="radio" name="contact" id="cc2" value="no">No <br>
             &emsp;<input type="radio" name="contact" id="cc3" value="dontknow">Don't know
         </p>
-          <p>11. Have you come in contact with a suspected case?<br>
+          <p><b>11. Have you come in contact with a suspected case?</b><br>
             &emsp;<input type="radio" name="contact2" id="sc1" value="yes">Yes<br>
             &emsp;<input type="radio" name="contact2" id="sc2" value="no">No <br>
             &emsp;<input type="radio" name="contact2" id="sc3" value="dontknow">Don't know
           </p>
-          <p>12. Do you have a history of any of the diseases below? Select all those applicable.<br><br>
+          <p><b>12. Do you have a history of any of the diseases below? Select all those applicable.</b><br><br>
             &emsp;<input type="checkbox" name="diseases" id="d1" value="normal">BP<br>
             &emsp;<input type="checkbox" name="diseases" id="d2" value="mild">Diabetes<br>
             &emsp;<input type="checkbox" name="diseases" id="d3" value="moderate">Obesity<br>
@@ -99,4 +103,12 @@
       <button type="button" onclick="checkButton()">Submit</button>
     </p>
     </body>
+    <footer >
+      <hr > <code >
+        <center>
+          <a href="Meghana.html">Meghana Mohanty</a>  | 
+          <a href="Srushti.html">Srushti Nikam</a> 
+        </center>
+      </code > 
+    </footer >
 </html>
