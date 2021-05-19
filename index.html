@@ -109,9 +109,39 @@
           </ul>
           </p>
         </div>
+    
 
     </body > 
     <footer >
+        <?php
+
+  session_start();
+  $counter_name = "counter.txt";
+
+  if (!file_exists($counter_name)) 
+  {
+    $fin = fopen($counter_name, "w");
+    fwrite($f,"0");
+    fclose($f);
+  }
+
+  $fout = fopen($counter_name, "r");
+  $counterVal = fread($fout, filesize($counter_name));
+  fclose($fout);
+
+  if(!isset($_SESSION['hasVisited']))
+  {
+    $_SESSION['hasVisited']="yes";
+    $counterVal++;
+    $fin = fopen($counter_name, "w");
+    fwrite($fin, $counterVal);
+    fclose($fin);
+  }
+
+  ?> 
+    <div class="visitor-count"> 
+    <p>Visitor's count: 0<?php echo "$counterVal"?></P>
+    </div>
       <hr > <code >
         <center>
           <a href="https://www.linkedin.com/in/meghana-mohanty-1295501a2/">Meghana Mohanty</a>  | 
