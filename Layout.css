@@ -69,7 +69,7 @@ p
 }
 #caution
 {
-  color : rgb(180, 4, 4);
+  color : rgb(241, 3, 3);
   font-weight : bolder;
 }
 .float-container {
@@ -160,11 +160,11 @@ p
   font-size: 20px;
   margin-left: 50px;
   margin-right: 50px;
-  background-color: #52b788;
+  background-color: #255ABB;
   border-width: 10px;
   border-radius: 10px;
   height: 50px;
-  
+  color: whitesmoke;
 }
 .links a:hover
 {
