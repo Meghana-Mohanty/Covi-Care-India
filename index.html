@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html >
     <head >
+      <link rel="shortcut icon" href="favicon.ico"/>  
       <link rel = "stylesheet" type = "text/css" href ="Layout.css" >
-        <title > Covi-Care India </title>
-      
+      <meta charset='utf-8'>
+      <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+      <title > Covi-Care India </title>
+      <meta name='viewport' content='width=device-width, initial-scale=1'>
     </head >
     
     <body >
@@ -34,10 +37,11 @@
           <br>
           <br> <br> 
             
-            <p > Hello! Welcome to Covi-Care India.  </p >
+            <p > Welcome to Covi-Care India.  </p >
              <p id = caution>If you are experiencing a life-threatening emergency or any of the
-             symptoms mentioned in the test, please call 102 or 1075 immediately. </p>
-            <p > This site has a covid self assessment test, links for resources and remedies from across the web.   </p>
+               <a href="#symptoms"> symptoms here</a>, please call 102 or 1075 immediately. </p>
+            <p > This site has a covid self assessment test, links for resources 
+            and precautions as advised by the government.   </p>
             <p >The data you enter on this site is not saved anywhere. </p > 
         </div >
         <br>
@@ -66,7 +70,8 @@
         </div>
 
         <br><br>
-        <div class="info">
+        <section id="symptoms"></section>
+        <div class="info" >
           <h2>Symptoms</h2>
           <p>
             Most common symptoms include: 
@@ -109,38 +114,16 @@
           </ul>
           </p>
         </div>
+        <p>
+          <center>
+          <h2>Stay Home, Stay Safe!</h2>  
+          </center>
+        </p>
 
     </body > 
     <footer >
-      <?php
+      
 
-  session_start();
-  $counter_name = "counter.txt";
-
-  if (!file_exists($counter_name)) 
-  {
-    $fin = fopen($counter_name, "w");
-    fwrite($fin,"20");
-    fclose($fin);
-  }
-
-  $fout = fopen($counter_name, "r");
-  $counterVal = fread($fout, filesize($counter_name));
-  fclose($fout);
-
-  if(!isset($_SESSION['hasVisited']))
-  {
-    $_SESSION['hasVisited']="yes";
-    $counterVal++;
-    $fin = fopen($counter_name, "w");
-    fwrite($fin, $counterVal);
-    fclose($fin);
-  }
-
-  ?> 
-    <div class="visitor-count"> 
-    <p>Visitor's count: 0<?php echo "$counterVal"?></P>
-    </div>
       <hr > <code >
         <center>
           <a href="https://www.linkedin.com/in/meghana-mohanty-1295501a2/">Meghana Mohanty</a>  | 
