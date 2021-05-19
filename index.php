@@ -109,14 +109,10 @@
           </ul>
           </p>
         </div>
-    
 
     </body > 
     <footer >
-        <?php include 'footer.php';?>
-    <div class="visitor-count"> 
-    <p>Visitor's count: 0<?php echo "$counterVal"?></P>
-    </div>
+      <?php include 'counter.php'?>
       <hr > <code >
         <center>
           <a href="https://www.linkedin.com/in/meghana-mohanty-1295501a2/">Meghana Mohanty</a>  | 
