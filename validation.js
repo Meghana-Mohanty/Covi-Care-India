@@ -112,11 +112,11 @@ function checkButton() {
         }
         if (count >= 3)
         {
-            window.location.assign("positive.html") ;
+            window.location.assign("Positive.html") ;
         }
         else
         {
-            window.location.assign("negative.html") ;
+            window.location.assign("Negative.html") ;
         }
     }
 }   
