@@ -120,8 +120,8 @@
   if (!file_exists($counter_name)) 
   {
     $fin = fopen($counter_name, "w");
-    fwrite($f,"20");
-    fclose($f);
+    fwrite($fin,"20");
+    fclose($fin);
   }
 
   $fout = fopen($counter_name, "r");
