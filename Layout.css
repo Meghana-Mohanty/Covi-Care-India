@@ -94,15 +94,14 @@ p
 }
 .navbar a
 {
-  float: left;
+  float: center;
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding-right: 32px;
-  padding-left: 45px;
+  line-height: 50px;
   text-decoration: none;
   font-size: 18px;
-  margin-left: 21px;
+  
 }
 .navbar
 {
